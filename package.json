@@ -17,7 +17,7 @@
     "Sass"
   ],
   "author": "KITAITI Makoto",
-  "license": "MIT",
+  "license": "LGPLv3",
   "bugs": {
     "url": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url/issues"
   },
