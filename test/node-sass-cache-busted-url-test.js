@@ -42,3 +42,15 @@ describe("cache-busted-url", function() {
     });
   });
 });
+
+describe("CLI", function() {
+  it("custom-functions.js", function() {
+    var expected = fs.readFileSync(__dirname + "/example1.css").toString().trim();
+    var commandPath = "$(npm bin)/node-sass";
+    var customFunctionsPath = __dirname + "/../custom-functions.js";
+    var sassFilePath = __dirname + "/example1.sass";
+    var command = [commandPath, "--functions=" + customFunctionsPath, sassFilePath].join(" ");
+    var actual = require("child_process").execSync(command).toString().trim();
+    assert(expected === actual);
+  });
+});
