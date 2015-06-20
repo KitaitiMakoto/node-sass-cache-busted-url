@@ -7,7 +7,7 @@
     "test": "test/"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --require=intelli-espower-loader"
   },
   "repository": {
     "type": "git",
