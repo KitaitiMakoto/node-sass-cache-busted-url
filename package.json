@@ -1,5 +1,5 @@
 {
-  "name": "cache-busted-url",
+  "name": "node-sass-cache-busted-url",
   "version": "0.0.1",
   "description": "Custom Sass function to replace URLs in CSS with cache busted URL",
   "main": "index.js",
