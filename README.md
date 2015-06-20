@@ -26,7 +26,7 @@ body {
 }
 ```
 
-Then execute JavaScript:
+### JavaScript API ###
 
 ```javascript
 var sass = requrie("node-sass");
@@ -53,7 +53,9 @@ console.log(compiled.css.toString());
 //   background: url("/images/bg-3d1fc66b0a4bb6af83ea234d1f510408.png") no-repeat; }
 ```
 
-Or specify custom function by command-line options:
+### Command-line interface ###
+
+`node-sass` accepts `functions` options to specify file which defines Sass custom functions.
 
 ```
 $ CACHE_BUSTERS_PATH=cache-busters.json \
@@ -64,6 +66,8 @@ body {
   background: url("/images/bg-3d1fc66b0a4bb6af83ea234d1f510408.png") no-repeat; }
 
 ```
+
+### Customize function name ###
 
 As advanced usage of library, you can change the name of Sass custom function. Let's use it as `image-url` function:
 
