@@ -4,7 +4,7 @@
   "description": "Custom Sass function to replace URLs in CSS with cache busted URL",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,8 @@
     "node-sass": "^3.2.0"
   },
   "devDependencies": {
+    "espower-loader": "^0.11.0",
+    "intelli-espower-loader": "^0.7.0",
     "mocha": "^2.2.5",
     "power-assert": "^0.11.0"
   }
