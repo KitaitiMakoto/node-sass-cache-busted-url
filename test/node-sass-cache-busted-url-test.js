@@ -6,7 +6,7 @@ var fs = require("fs");
 var sass = require("node-sass");
 
 var cacheBustedUrl = require("../index");
-var cacheBusters = require("../cache-busters.json");
+var cacheBusters = require("./cache-busters.json");
 
 describe("cache-busted-url", function() {
   before(function() {
@@ -46,11 +46,14 @@ describe("cache-busted-url", function() {
 describe("CLI", function() {
   it("custom-functions.js", function() {
     var expected = fs.readFileSync(__dirname + "/example1.css").toString().trim();
+
+    var env = process.env;
+    env.CACHE_BUSTERS_PATH = __dirname + "/cache-busters.json";
     var commandPath = "$(npm bin)/node-sass";
     var customFunctionsPath = __dirname + "/../custom-functions.js";
     var sassFilePath = __dirname + "/example1.sass";
     var command = [commandPath, "--functions=" + customFunctionsPath, sassFilePath].join(" ");
-    var actual = require("child_process").execSync(command).toString().trim();
+    var actual = require("child_process").execSync(command, {env: env}).toString().trim();
     assert(expected === actual);
   });
 });
