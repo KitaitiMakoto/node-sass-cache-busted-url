@@ -4,6 +4,7 @@ var assert = require("power-assert");
 
 var fs = require("fs");
 var sass = require("node-sass");
+
 var cacheBustedUrl = require("../index");
 var cacheBusters = require("../cache-busters.json");
 
