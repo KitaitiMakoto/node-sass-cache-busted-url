@@ -62,7 +62,7 @@ At CLI, specify path to file which defines URL-cache busted URL mapping by envir
 ```
 $ CACHE_BUSTERS_PATH=cache-busters.json \
   $(npm bin)/node-sass \
-  --functions=node_modules/node-sass-cache-busted-url/custom-functions.js \
+  --functions=$(npm root)/node-sass-cache-busted-url/custom-functions.js \
   example.scss
 body {
   background: url("/images/bg-3d1fc66b0a4bb6af83ea234d1f510408.png") no-repeat; }
