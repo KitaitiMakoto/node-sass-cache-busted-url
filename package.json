@@ -1,0 +1,22 @@
+{
+  "name": "cache-busted-url",
+  "version": "0.0.1",
+  "description": "Custom Sass function to replace URLs in CSS with cache busted URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url"
+  },
+  "keywords": [
+    "Sass"
+  ],
+  "author": "KITAITI Makoto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url/issues"
+  },
+  "homepage": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url"
+}
