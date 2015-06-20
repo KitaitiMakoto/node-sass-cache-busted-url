@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url/issues"
   },
-  "homepage": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url"
+  "homepage": "https://github.com/KitaitiMakoto/node-sass-cache-busted-url",
+  "dependencies": {
+    "node-sass": "^3.2.0"
+  }
 }
