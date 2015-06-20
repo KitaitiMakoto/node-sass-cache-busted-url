@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Custom Sass function to replace URLs in CSS with cache busted URL",
   "main": "index.js",
+  "directories": {
+    "test": "test/"
+  },
   "scripts": {
     "test": "mocha"
   },
