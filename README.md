@@ -57,6 +57,8 @@ console.log(compiled.css.toString());
 
 `node-sass` accepts `functions` options to specify file which defines Sass custom functions.
 
+At CLI, specify path to file which defines URL-cache busted URL mapping by environment variable `CACHE_BUSTERS_PATH`.
+
 ```
 $ CACHE_BUSTERS_PATH=cache-busters.json \
   $(npm bin)/node-sass \
