@@ -13,9 +13,4 @@ function cacheBustedUrl(cacheBusters, url) {
   return replacement;
 }
 
-module.exports = function(cacheBusterFile) {
-  var cacheBusters = require(cacheBusterFile);
-  return {
-    "cache-busted-url($url)": cacheBustedUrl.bind(null, cacheBusters)
-  };
-};
+module.exports = cacheBustedUrl;
